@@ -1,0 +1,70 @@
+{{>header}}
+<body>
+    
+    <div class="container-fluid main_menu">
+        <div class="row">
+
+            <div class="col-md-12 col-12 mx-auto">
+
+              {{>navbar}}
+            </div>
+        </div>
+<!-- <button class="btn btn-danger"></button> -->
+
+    </div>
+<!-- header -->
+<div class="container-fluid ">
+    <div class="row">
+
+        <div class="col-md-12 col-12 mx-auto align-items-center" >
+            <div class="row">
+            <!-- left side -->
+            <div class="col-md-6 col-12 main_header_left align-items-center">
+               <div class='box' style="background-color: cadetblue;">
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+        <div id="weathercon"><i class='fas fa-cloud-sun' style='color: #d36326;font-size:10rem'></i></div>
+        <div class="info">
+          <h2 class="location" id="location"></h2>
+          <p id="date">MONDAY | SEP 12 | 12:34</p>
+          <h1 class="temp" id="temp" style="margin:0;">
+              
+          </h1>
+                    <h2 class="temp" id="temp_status"></h2>
+
+          {{!-- <h4 class="tempmin_max" style="text-align: center;">Min {%tempmin%} | Max {%tempmax%}</h4> --}}
+        </div>
+      </div>
+
+                </div>
+                <!-- right side -->
+                <div class="col-md-6 col-12 main_header_right align-items-center">
+
+                    <h1>Welcome <span>Weather App</span> ❤</h1>
+                    
+                    <div class="main_content">
+<form class="temp_form">
+<input type="text" class="form-control" id="city_name" placeholder="Enter City Name" autocomplete="off">
+<input type="submit" class="btn btn-info" value="Search" id="submit_button"> 
+</form>
+
+                    </div>
+                    <h1 id="errormsg"></h1>
+                    <!-- <a href="/weather" ><button>Check Now</button></a> -->
+
+                    </div>
+                </div>
+                </div>
+
+            </div>
+            </div>
+            </div>
+           {{>footer}}
+<script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>
